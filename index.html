@@ -10,20 +10,20 @@
         .container { max-width: 600px; margin: auto; }
 
         /* สไตล์ปุ่มสี่เหลี่ยมผืนผ้า */
-        .img-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            background: white;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 12px; /* มุมโค้งมนกำลังดี */
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* เงาบางๆ */
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid #ddd;
-        }
+            .img-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background: white;
+                margin-bottom: 15px;
+                padding: 15px;
+                border-radius: 12px; /* มุมโค้งมนกำลังดี */
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* เงาบางๆ */
+                text-decoration: none;
+                transition: all 0.3s ease;
+                border: 1px solid #ddd;
+            }
 
         /* เอฟเฟกต์เวลาเอาเมาส์วาง */
         .img-btn:hover {
@@ -35,10 +35,10 @@
         /* จัดการขนาดรูปภาพ */
         .img-btn img {
             width: 100%;
-            max-width: 250px; /* ปรับขนาดโลโก้ไม่ให้ใหญ่เกินไป */
-            height: 80px; /* บังคับความสูงเพื่อให้ทุกปุ่มเท่ากัน */
+            max-width: 100px; /* ปรับขนาดโลโก้ไม่ให้ใหญ่เกินไป */
+            height: 50px; /* บังคับความสูงเพื่อให้ทุกปุ่มเท่ากัน */
             object-fit: contain; /* ป้องกันรูปบิดเบี้ยว */
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .label {
@@ -62,16 +62,16 @@
 <body>
 
 <div class="container">
-    <h2>3CX Prefix Dialer</h2>
+    <h2>3CX Prefix Customer</h2>
     
     <a href="tel:8" class="img-btn">
         <img src="01-TBV.png" alt="1">
-        <div class="label">บริษัท A <span class="prefix-tag">กด 8</span></div>
+        <div class="label">โทรออกสู่ลูกค้าบริษัทไทยเบฟ <span class="prefix-tag">กด 8</span></div>
     </a>
 
     <a href="tel:7" class="img-btn">
         <img src="02-QSA.png" alt="2">
-        <div class="label">บริษัท B <span class="prefix-tag">กด 7</span></div>
+        <div class="label">โทรออกสู่ลูกค้า ร้าน KFC <span class="prefix-tag">กด 7</span></div>
     </a>
 
     <div class="info">
