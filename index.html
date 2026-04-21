@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3CX Company Dialer</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; text-align: center; padding: 40px 20px; background-color: #f0f2f5; }
+        h2 { color: #1c1e21; margin-bottom: 30px; }
+        .container { max-width: 600px; margin: auto; }
+
+        /* สไตล์ปุ่มสี่เหลี่ยมผืนผ้า */
+        .img-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 12px; /* มุมโค้งมนกำลังดี */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* เงาบางๆ */
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid #ddd;
+        }
+
+        /* เอฟเฟกต์เวลาเอาเมาส์วาง */
+        .img-btn:hover {
+            transform: translateY(-3px); /* ยกตัวขึ้นเล็กน้อย */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            border-color: #0078D4;
+        }
+
+        /* จัดการขนาดรูปภาพ */
+        .img-btn img {
+            width: 100%;
+            max-width: 250px; /* ปรับขนาดโลโก้ไม่ให้ใหญ่เกินไป */
+            height: 80px; /* บังคับความสูงเพื่อให้ทุกปุ่มเท่ากัน */
+            object-fit: contain; /* ป้องกันรูปบิดเบี้ยว */
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .prefix-tag {
+            background: #0078D4;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+        .info { font-size: 13px; color: #777; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>3CX Prefix Dialer</h2>
+    
+    <a href="tel:8" class="img-btn">
+        <img src="logo-a.png" alt="Company A">
+        <div class="label">บริษัท A <span class="prefix-tag">กด 8</span></div>
+    </a>
+
+    <a href="tel:7" class="img-btn">
+        <img src="logo-b.png" alt="Company B">
+        <div class="label">บริษัท B <span class="prefix-tag">กด 7</span></div>
+    </a>
+
+    <a href="tel:9" class="img-btn">
+        <img src="logo-c.png" alt="Company C">
+        <div class="label">บริษัท C <span class="prefix-tag">กด 9</span></div>
+    </a>
+
+    <div class="info">
+        *คลิกที่โลโก้เพื่อโทรออกผ่าน 3CX*
+    </div>
+</div>
+
+</body>
+</html>
